@@ -1,0 +1,21 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100%;
+}
+
+.form-rsvp form {
+    width: 90%;
+    border: 3px solid #b36b0e;
+    background-color: #eddbc2;
+    padding: 10px;
+}
+
+
+.form-rsvp input[type="text"] {
+    width: 80%;
+    margin: 8px 1em;
+    border: 2px solid #0f4214;
+    border-radius: 5px;
+    background-color: #9fc2a2;
+    padding: 2px;
+}
