@@ -4,8 +4,8 @@ Here is a display of sample websites that I made using HTML and CSS.
 
 ## Projects
 -----------
-* Lands Between Site
-* Bay Area Tourneys Site
+* [Lands Between Site]
+* [Bay Area Tourneys Site](bootstrap4_project/bay_area_tourneys.html)
 
 ### Lands Between Site
 
