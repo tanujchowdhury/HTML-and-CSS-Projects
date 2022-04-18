@@ -3,7 +3,7 @@
 Here is a display of sample websites that I made using HTML and CSS.
 
 ## Projects
------------
+
 * [Lands Between Site](Basic_HTML_and_CSS/project/index.html)
 * [Bay Area Tourneys Site](bootstrap4_project/bay_area_tourneys.html)
 
