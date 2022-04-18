@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initital-scale=1">
+        <style>
+            @media screen and (max-width: 600px) {
+                p {
+                    color: blue;
+                }
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            img {
+                filter: hue-rotate(180deg);
+                border-radius: 50px;
+                cursor: pointer;
+                width: 75%;
+            }
+            footer {
+                text-align: center;
+                font-weight: bold;
+                margin-top: 72pt;
+            }
+            table {
+                margin-top: 72pt;
+                margin-left: auto;
+                margin-right: auto;
+                border-collapse: collapse;
+                width: 50%;
+            }
+            td, th {
+                border: 2px solid darkblue;
+                text-align: center;
+                padding: 20px;
+            }
+            tr:nth-child(1) {
+                background-color: lightblue;
+            } 
+            .container {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 72pt;
+                position: relative;
+                text-align: center;
+                width: 100%;
+            }
+            .caption {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-weight: 900;
+                font-size: large;
+            }
+            .navbar {
+                overflow: hidden;
+                background-color: darkblue;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 100;
+            }
+            .navbar a {
+                float: left;
+                display: block;   
+                color: lightblue;
+                text-align: center;
+                padding: 14px 16px;
+                font-size: large;
+                font-weight: 600;
+            }
+            .navbar a:hover {
+                background: lightblue;
+                color: darkblue;
+            }
+            .column {
+                float: left;
+                width: 50%;
+                color: #800060;
+                background-color: #99b3ff;
+                height: 100px;
+                text-align: center;
+            }
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .container p {
+                font-size: xx-large;
+                font-weight: 600;
+                color: #b30000;
+            }
+            p:hover {
+                font-weight: 900;
+                color: #ff1aff;
+            }
+            .overlay1 {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 75%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #00cca3;
+                border-radius: 50px;
+            }
+            .overlay2 {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 75%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #3399ff;
+            }
+            .container:hover .overlay1 {
+                opacity: 1;
+            }
+            .container:hover .overlay2 {
+                opacity: 1;
+            }
+            .text1 {
+                color: #ffb3ff;
+                font-size: 70px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .text2 {
+                color: #cccc00;
+                font-size: 70px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            video {
+                width: 75%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="container">
+            <img src="phonepicutres-TA.webp" alt="risky selfie">
+            <div class="caption">Be careful when taking selfies!</div>
+            <div class="overlay1">
+                <div class="text1">Hello there!</div>
+            </div>
+        </div>   
+        <table>
+            <tr>
+              <th>Name</th>
+              <th>Number</th>
+              <th>Email</th>
+            </tr>
+            <tr>
+              <td>John Smith</td>
+              <td>(555) 123 4567</td>
+              <td>smith@example.com</td>
+            </tr>
+            <tr>
+              <td>Alice Baker</td>
+              <td>(210) 098 7654</td>
+              <td>abaker@company.com</td>
+            </tr>
+        </table>
+        <div class="container">
+            <div class="row">
+                <div class="column">Column 1</div>
+                <div class="column">Column 2</div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <p>This text has a hover effect!</p>
+        </div>
+        
+        <div class="container">
+            <video controls muted autoplay loop><source src="winter_house.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+            <div class="overlay2">
+                <div class="text2">Have a good day!</div>
+            </div>
+        </div>
+
+
+    </body>
+    <footer>
+        <p>Author: Tanuj Chowdhury</p>
+        <p><a href="mailto:chowdhury.tanuj@gmail.com">chowdhury.tanuj@gmail.com</a></p>
+    </footer>
+</html>
