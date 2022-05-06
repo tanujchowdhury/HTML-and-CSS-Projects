@@ -3,200 +3,294 @@
 	<head>
 		<meta charset="utf-8">
 		<title>The Lands Between | Adventure Awaits</title>
+        <link rel="stylesheet" href="css/shared.css">
+        <link rel="stylesheet" href="css/animations.css">
 		<link rel="stylesheet" href="css/one_page_website.css">
 		<script src="JS/one_page_website.js" defer></script>
 	</head>
-	<body>
-		
-		<!-- NAV -->
-		<div>
-			<nav>
-				<ul>
-					<a href="#home" id="link"><li>HOME</li></a>
-					<a href="#gallery"><li>GALLERY</li></a>
-					<a href="#video"><li>VIDEO</li></a>
+    <body>
+
+        <!-- NAV -->
+        <div class="wrap">
+            <div class="menu-container">
+                <ul class="menu">
+                    <a href="#home"><li>HOME</li></a>
+                    <a href="#gallery"><li>GALLERY</li></a>
+                    <a href="#video"><li>VIDEO</li></a>
 					<a href="#contact"><li>RESERVATIONS</li></a>
-				</ul>
-			</nav>
-		</div>
-		<!-- END NAV -->
+                </ul>
+            </div>
+        </div>
+        <!-- END NAV -->
+
+        <!-- HOME -->
+        <div id="home">
+            <div class="container">
+                <div class="text-center">
+                    <span class="head-main">The Lands Between</span>
+                </div>
+            </div>
+        </div>
+        <!-- END HOME -->
+
+        <!-- GALLERY -->
+        <section id="gallery">
+            <div class="container">
+                <h1>Gallery</h1>
+                <div class="flex-container">
+
+                    <!-- PHOTO CONTAINER 1 -->
+                    <div class="photo-container">
+                        <div class="photo" onclick="openModal();currentSlide(1)">
+                            <img src="images/thumb/thumbnail_1.jpg" alt="Limgrave" class="hover-shadow">
+                            <div class="photo-overlay">
+                                <h3>Click to Enlarge</h3>
+                                <p>Rise Tarnished! We need your help to restore the Elden Ring!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PHOTO CONTAINER 1 -->
+
+                    <!-- PHOTO CONTAINER 2 -->
+                    <div class="photo-container">
+                        <div class="photo" onclick="openModal();currentSlide(2)" >
+                            <img src="images/thumb/thumbnail_2.jpg" alt="Stormveil Castle" class="hover-shadow">
+                            <div class="photo-overlay">
+                                <h3>Click to Enlarge</h3>
+                                <p>Lord Godrick lies in Stormveil Castle. Aquire his Great Rune.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PHOTO CONTAINER 2 -->
+
+                    <!-- PHOTO CONTAINER 3 -->
+                    <div class="photo-container" onclick="openModal();currentSlide(3)">
+                        <div class="photo">
+                            <img src="images/thumb/thumbnail_3.jpg" alt="Liurnia of the Lakes" class="hover-shadow">
+                            <div class="photo-overlay">
+                                <h3>Click to Enlarge</h3>
+                                <p>Find the Academy of Raya Lucaria hidden in Liurnia of the Lakes. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PHOTO CONTAINER 3 -->
+
+                    <!-- PHOTO CONTAINER 4 -->
+                    <div class="photo-container" onclick="openModal();currentSlide(4)">
+                        <div class="photo">
+                            <img src="images/thumb/thumbnail_4.jpg" alt="Caelid Highway" class="hover-shadow">
+                            <div class="photo-overlay">
+                                <h3>Click to Enlarge</h3>
+                                <p>Caelid is an arid wasteland filled with scarlet rot. The sunsets are nice, though!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PHOTO CONTAINER 4 -->
+
+                    <!-- PHOTO CONTAINER 5 -->
+                    <div class="photo-container" onclick="openModal();currentSlide(5)">
+                        <div class="photo">
+                            <img src="images/thumb/thumbnail_5.jpg" alt="Altus Plateau" class="hover-shadow">
+                            <div class="photo-overlay">
+                                <h3>Click to Enlarge</h3>
+                                <p>Only the Tarnished with the highest honor can enter the Royal Capital.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PHOTO CONTAINER 5 -->
+
+                    <!-- PHOTO CONTAINER 6 -->
+                    <div class="photo-container" onclick="openModal();currentSlide(6)">
+                        <div class="photo">
+                            <img src="images/thumb/thumbnail_6.jpg" alt="Mohgwyn Palace" class="hover-shadow">
+                            <div class="photo-overlay">
+                                <h3>Click to Enlarge</h3>
+                                <p>Under the depths of the Lands Between, there lies more secrets for you to find!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PHOTO CONTAINER 6 -->
+
+                    <!-- PHOTO CONTAINER 7 -->
+                    <div class="photo-container" onclick="openModal();currentSlide(7)">
+                        <div class="photo">
+                            <img src="images/thumb/thumbnail_7.jpg" alt="Mountaintop of the Giants" class="hover-shadow">
+                            <div class="photo-overlay">
+                                <h3>Click to Enlarge</h3>
+                                <p>To restore the Elden Ring, make your way to the Realm of the Giants!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PHOTO CONTAINER 7 -->
+
+                    <!-- PHOTO CONTAINER 8 -->
+                    <div class="photo-container" onclick="openModal();currentSlide(8)">
+                        <div class="photo">
+                            <img src="images/thumb/thumbnail_8.jpg" alt="Two knights on horseback" class="hover-shadow">
+                            <div class="photo-overlay">
+                                <h3>Click to Enlarge</h3>
+                                <p>Your celestial steed, Torrent, will aid you in many battles in the Lands Between!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PHOTO CONTAINER 8 -->
+
+                    <!-- PHOTO CONTAINER 9 -->
+                    <div class="photo-container" onclick="openModal();currentSlide(9)">
+                        <div class="photo">
+                            <img src="images/thumb/thumbnail_9.jpg" alt="Walking Mausoleum" class="hover-shadow">
+                            <div class="photo-overlay">
+                                <h3>Click to Enlarge</h3>
+                                <p>There are countless secrets to find, even ones in plain sight!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PHOTO CONTAINER 9 -->
+                </div>
+
+				<!-- LIGHTBOX -->
+				<div class="modal" id="myModal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
 		
-		<!-- HOME -->
-		<div id="home">
-			<div>
-				<div>
-					<span>The Lands Between</span>
-				</div>
-			</div>
-		</div>
-		<!-- END HOME -->
+						<div class="mySlides">
+							<div class="numbertext">1/9</div>
+							<img src="images/thumb/thumbnail_1.jpg" alt="Limgrave" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">2/9</div>
+							<img src="images/thumb/thumbnail_2.jpg" alt="Stormveil Castle" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">3/9</div>
+							<img src="images/thumb/thumbnail_3.jpg" alt="Liurnia of the Lakes" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">4/9</div>
+							<img src="images/thumb/thumbnail_4.jpg" alt="Caelid" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">5/9</div>
+							<img src="images/thumb/thumbnail_5.jpg" alt="Altus Plateau" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">6/9</div>
+							<img src="images/thumb/thumbnail_6.jpg" alt="Mohgwyn Palace" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">7/9</div>
+							<img src="images/thumb/thumbnail_7.jpg" alt="Mountaintop of the Giants" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">8/9</div>
+							<img src="images/thumb/thumbnail_8.jpg" alt="Two knights on horseback" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">9/9</div>
+							<img src="images/thumb/thumbnail_9.jpg" alt="Walking Mausoleum" style="width:100%">
+						</div>
 		
+						<!-- Next and previous controls -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
 		
-		<!-- LIGHTBOX -->
-			<!-- Images used to open the lightbox -->
-		<div class="row">
-			<div class="column">
-				<img src="images/thumb/thumbnail_1.jpg" alt="Limgrave" onclick="openModal();currentSlide(1)" class="hover-shawdow" style="width:100%"></img>
-			</div>
-			<div class="column">
-				<img src="images/thumb/thumbnail_2.jpg" alt="Stormveil Castle" onclick="openModal();currentSlide(2)" class="hover-shawdow" style="width:100%">
-			</div>
-			<div class="column">
-				<img src="images/thumb/thumbnail_3.jpg" alt="Liurnia of the Lakes" onclick="openModal();currentSlide(3)" class="hover-shawdow" style="width:100%">
-			</div>
-			<div class="column">
-				<img src="images/thumb/thumbnail_4.jpg" alt="Caelid" onclick="openModal();currentSlide(4)" class="hover-shawdow" style="width:100%">
-			</div>
-			<div class="column">
-				<img src="images/thumb/thumbnail_5.jpg" alt="Altus Plateau" onclick="openModal();currentSlide(5)" class="hover-shawdow" style="width:100%">
-			</div>
-			<div class="column">
-				<img src="images/thumb/thumbnail_6.jpg" alt="Mohgwyn Palace" onclick="openModal();currentSlide(6)" class="hover-shawdow" style="width:100%">
-			</div>
-			<div class="column">
-				<img src="images/thumb/thumbnail_7.jpg" alt="Mountaintop of the Giants" onclick="openModal();currentSlide(7)" class="hover-shawdow" style="width:100%">
-			</div>
-			<div class="column">
-				<img src="images/thumb/thumbnail_8.jpg" alt="Two knights on horseback" onclick="openModal();currentSlide(8)" class="hover-shawdow" style="width:100%">
-			</div>
-			<div class="column">
-				<img src="images/thumb/thumbnail_9.jpg" alt="Walking Mausoleum" onclick="openModal();currentSlide(9)" class="hover-shawdow" style="width:100%">
-			</div>
-		</div>
-
-			<!-- The Lightbox -->
-		<div class="modal" id="myModal">
-			<span class="close cursor" onclick="closeModal()">&times;</span>
-			<div class="modal-content">
-
-				<div class="mySlides">
-					<div class="numbertext">1/9</div>
-					<img src="images/thumb/thumbnail_1.jpg" alt="Limgrave" style="width:100%">
-				</div>
-				<div class="mySlides">
-					<div class="numbertext">2/9</div>
-					<img src="images/thumb/thumbnail_2.jpg" alt="Stormveil Castle" style="width:100%">
-				</div>
-				<div class="mySlides">
-					<div class="numbertext">3/9</div>
-					<img src="images/thumb/thumbnail_3.jpg" alt="Liurnia of the Lakes" style="width:100%">
-				</div>
-				<div class="mySlides">
-					<div class="numbertext">4/9</div>
-					<img src="images/thumb/thumbnail_4.jpg" alt="Caelid" style="width:100%">
-				</div>
-				<div class="mySlides">
-					<div class="numbertext">5/9</div>
-					<img src="images/thumb/thumbnail_5.jpg" alt="Altus Plateau" style="width:100%">
-				</div>
-				<div class="mySlides">
-					<div class="numbertext">6/9</div>
-					<img src="images/thumb/thumbnail_6.jpg" alt="Mohgwyn Palace" style="width:100%">
-				</div>
-				<div class="mySlides">
-					<div class="numbertext">7/9</div>
-					<img src="images/thumb/thumbnail_7.jpg" alt="Mountaintop of the Giants" style="width:100%">
-				</div>
-				<div class="mySlides">
-					<div class="numbertext">8/9</div>
-					<img src="images/thumb/thumbnail_8.jpg" alt="Two knights on horseback" style="width:100%">
-				</div>
-				<div class="mySlides">
-					<div class="numbertext">9/9</div>
-					<img src="images/thumb/thumbnail_9.jpg" alt="Walking Mausoleum" style="width:100%">
-				</div>
-
-				<!-- Next and previous controls -->
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-				<!-- Caption text -->
-				<div class="caption-container">
-					<p id="caption"></p>
-				</div>
-
-				<!-- Thumbnail image controls -->
-				<div class="column">
-					<img class="demo" src="images/thumb/thumbnail_1.jpg" onclick="currentSlide(1)" alt="Limgrave" style="width:100%">
-				</div>
-				<div class="column">
-					<img class="demo" src="images/thumb/thumbnail_2.jpg" onclick="currentSlide(2)" alt="Stormveil Castle" style="width:100%">
-				</div>
-				<div class="column">
-					<img class="demo" src="images/thumb/thumbnail_3.jpg" onclick="currentSlide(3)" alt="Liurnia of the Lakes" style="width:100%">
-				</div>
-				<div class="column">
-					<img class="demo" src="images/thumb/thumbnail_4.jpg" onclick="currentSlide(4)" alt="Caelid" style="width:100%">
-				</div>
-				<div class="column">
-					<img class="demo" src="images/thumb/thumbnail_5.jpg" onclick="currentSlide(5)" alt="Altus Plateau" style="width:100%">
-				</div>
-				<div class="column">
-					<img class="demo" src="images/thumb/thumbnail_6.jpg" onclick="currentSlide(6)" alt="Mohgwyn Palace" style="width:100%">
-				</div>
-				<div class="column">
-					<img class="demo" src="images/thumb/thumbnail_7.jpg" onclick="currentSlide(7)" alt="Mountaintop of the Giants" style="width:100%">
-				</div>
-				<div class="column">
-					<img class="demo" src="images/thumb/thumbnail_8.jpg" onclick="currentSlide(8)" alt="Two knights on horseback" style="width:100%">
-				</div>
-				<div class="column">
-					<img class="demo" src="images/thumb/thumbnail_9.jpg" onclick="currentSlide(9)" alt="Walking Mausoleum" style="width:100%">
-				</div>
-			</div>
-		</div>
-		<!-- END LIGHTBOX -->
+						<!-- Caption text -->
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
 		
+						<!-- Thumbnail image controls -->
+						<div class="thumbnail-container">
+							<div class="column">
+								<img class="demo" src="images/thumb/thumbnail_1.jpg" onclick="currentSlide(1)" alt="Limgrave">
+							</div>
+							<div class="column">
+								<img class="demo" src="images/thumb/thumbnail_2.jpg" onclick="currentSlide(2)" alt="Stormveil Castle">
+							</div>
+							<div class="column">
+								<img class="demo" src="images/thumb/thumbnail_3.jpg" onclick="currentSlide(3)" alt="Liurnia of the Lakes">
+							</div>
+							<div class="column">
+								<img class="demo" src="images/thumb/thumbnail_4.jpg" onclick="currentSlide(4)" alt="Caelid">
+							</div>
+							<div class="column">
+								<img class="demo" src="images/thumb/thumbnail_5.jpg" onclick="currentSlide(5)" alt="Altus Plateau">
+							</div>
+							<div class="column">
+								<img class="demo" src="images/thumb/thumbnail_6.jpg" onclick="currentSlide(6)" alt="Mohgwyn Palace">
+							</div>
+							<div class="column">
+								<img class="demo" src="images/thumb/thumbnail_7.jpg" onclick="currentSlide(7)" alt="Mountaintop of the Giants">
+							</div>
+							<div class="column">
+								<img class="demo" src="images/thumb/thumbnail_8.jpg" onclick="currentSlide(8)" alt="Two knights on horseback">
+							</div>
+							<div class="column">
+								<img class="demo" src="images/thumb/thumbnail_9.jpg" onclick="currentSlide(9)" alt="Walking Mausoleum">
+							</div>
+						</div>	
+					</div>
+				</div>
+				<!-- END LIGHTBOX-->
+
+
+		
+            </div>
+        </section>
+        <!-- END GALLERY -->
+
 		<!--VIDEO-->
 		<section>
-			<div id="video">
+			<div id="video" class="container">
 			<h1>Video</h1>
 				<div>
-					<div >
-						<iframe src="https://www.youtube.com/embed/_uydEN9Fu7M" width="800" height="600" title="Lost Grace Found"></iframe>
+					<div class="text-center">
+						<iframe src="https://www.youtube.com/embed/_uydEN9Fu7M" width="400" height="300" title="Lost Grace Found"></iframe>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!--END VIDEO-->
-		
-		<!-- RSVP -->
-		<section>
-			<div id="contact">
-				<div>
-					<h1>Reservations</h1>
-					<div>
-						<h2><span>Hark Tarnished, your adventure is about to begin.</span>
-							<br />Take back your grace of gold today!
-						</h2>
-						<p>
-							Make yourself known to us. 
-						</p>
-						<div class="form-rsvp">
-							<form action="" method="post">
-								<input class="rsvp" type="text" value ="" placeholder="First Name">
-								<input class="rsvp" type="text" value ="" placeholder="Last Name">
-								<input class="rsvp" type="text" value ="" placeholder="Email">
-								<input class="rsvp" type="text" value ="" placeholder="Phone Number">
+
+        <!-- RSVP -->
+        <section id="contact">
+            <div class="container">
+                <div class="heading-padding">
+                    <h1 class="heading-padding">Reservations</h1>
+                    <div class="reservation">
+                        <h2><span>Hark Tarnished, your adventure is about to begin.</span>
+                            <br>Take back your grace of gold today!
+                        </h2>
+                        <p class="rsvp-text">
+                            Please provide us with your basic contact information.
+                        </p>
+                        <div class="form-rsvp">
+                            <form action="" method="post">
+                                <input class="rsvp" type="text" value="" placeholder="First Name">
+								<input class="rsvp" type="text" value="" placeholder="Last Name">
+								<input class="rsvp" type="text" value="" placeholder="Email">
+								<input class="rsvp" type="text" value="" placeholder="Phone Number">
 								<div class="form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
-								<div>
+								<div class="submit">
 									<input type="submit" value="Submit">
 								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- END RSVP -->
-		
-		<!-- FOOTER -->
-		<div>
-			www.thelandsbetween.erdtree &nbsp;|&nbsp; &copy; 2022
-		</div>
-		<!-- END FOOTER -->
-		
-	</body>
-</html>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END RSVP -->
+
+        <!-- FOOTER -->
+        <div id="footer">
+            www.thelandsbetween.erdtree &nbsp;|&nbsp; &copy; 2022
+        </div>
+        <!-- END FOOTER -->
+
+    </body>
+</html>		
