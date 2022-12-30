@@ -1,0 +1,175 @@
+/********** Footer **********/
+.footer .column {
+    float: left;
+    margin-top: 2%;
+}
+
+.footer .left {
+    width: 15%;
+    border-right: 1px solid gray;
+}
+
+.footer .middle {
+    width: 15%;
+    padding-left: 2%;
+}
+
+.footer .right {
+    width: 54%;
+    border-left: 1px solid gray;
+    padding-left: 2%;
+}
+  
+/* Clear floats after the columns */
+.footer .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer th, td {
+    padding: 10px 10px;
+  }
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.footer li {
+    float: left;
+}
+  
+.footer li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+/* Change the link color to #111 (black) on hover */
+.footer li a:hover {
+    background-color: #111;
+}
+
+/* Add a gray right border to all list items, except the last item (last-child) */
+.footer li {
+    border-right: 1px solid #bbb;
+}
+  
+.footer li:last-child {
+    border-right: none;
+}
+
+.footer .column a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer .column a:hover {
+    text-decoration: underline;
+}
+
+/********** End Footer **********/
+
+
+/********** Header **********/
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.header li {
+    float: left;
+}
+  
+.header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+/* Change the link color to #111 (black) on hover */
+.header li a:hover {
+    background-color: #111;
+}
+
+/* Navbar container */
+.header .navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+/* Links inside the navbar */
+.header .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+/* The dropdown container */
+.header .dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+/* Dropdown button */
+.header .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+/* Add a red background color to navbar links on hover */
+.header .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+  
+/* Dropdown content (hidden by default) */
+.header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.header .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+/* Add a grey background color to dropdown links on hover */
+.header .dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+/* Show the dropdown menu on hover */
+.header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
